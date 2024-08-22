@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
     entities = [Note::class],
     version = 1,
 
-)
-abstract class NotesDatabase:RoomDatabase() {
-    abstract val dao:NoteDao
+    )
+abstract class NotesDatabase : RoomDatabase() {
+    abstract val dao: NoteDao
 }

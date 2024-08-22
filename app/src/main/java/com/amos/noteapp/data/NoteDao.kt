@@ -15,8 +15,8 @@ interface NoteDao {
     suspend fun deleteNote(note: Note)
 
     @Query("SELECT * FROM note ORDER BY dateAdded")
-    fun getNotesOrderedByDateAdded():Flow<List<Note>>
+    fun getNotesOrderedByDateAdded(): Flow<List<Note>>
 
     @Query("SELECT * FROM note ORDER BY title ASC")
-    fun getNotesOrderedByTitle():Flow<List<Note>>
+    fun getNotesOrderedByTitle(): Flow<List<Note>>
 }
